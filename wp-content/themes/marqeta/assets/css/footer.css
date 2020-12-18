@@ -1,0 +1,96 @@
+/*footer styles*/
+.site-footer{
+	padding-top: 140px;
+    background-color: #2a206a;
+    position: relative;
+}
+
+.site-footer .divider{
+	background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDBweCIgdmlld0JveD0iMCAwIDEyODAgMTQwIiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxnIGZpbGw9IiNmZmZmZmYiPjxwYXRoIGQ9Ik0xMjgwIDBsLTI2Mi4xIDExNi4yNmE3My4yOSA3My4yOSAwIDAgMS0zOS4wOSA2TDAgMHYxNDBoMTI4MHoiLz48L2c+PC9zdmc+);
+    background-size: 100% 100px;
+    top: 0;
+    height: 100px;
+    z-index: 1;
+    transform: rotateY(180deg) rotateX(180deg);
+    margin-top: -1px;
+    display: block;
+    background-repeat-y: no-repeat;
+    position: absolute;
+    pointer-events: none;
+    width: 100%;
+}
+
+.site-footer .above-the-footer{
+	margin-top: 50px;
+	padding-bottom: 72px;
+}
+.site-footer .above-the-footer .column{
+	float: none;
+    display: table-cell;
+    vertical-align: middle;
+    width:20%;
+}
+
+.site-footer .above-the-footer .column:nth-child(1){
+	width:9%;
+}
+.site-footer .above-the-footer .column:nth-child(2){
+	width:35%;
+}
+
+.site-footer .above-the-footer .column h3{
+	font-size: 40px;
+    letter-spacing: -.7px;
+    line-height: 54px;
+}
+
+.site-footer .footer-menus h4{
+	font-weight: 500;
+    letter-spacing: 0;
+    border-bottom: 1px solid #3f3679;
+    padding-bottom: 18px;
+    color: #ffffff;
+}
+
+.site-footer .footer-menus ul li{
+	padding-left: 0px;
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+.site-footer ul li a{
+	color: rgba(255,255,255,0.71);
+	text-decoration: none;
+}
+
+.site-footer .container{
+	width: 80%;
+}
+
+.site-footer .footer-menus{
+    justify-content: space-between;
+}
+.site-footer .footer-widget .fwidget{
+	line-height: 1.5em;
+	font-size: 14px;
+	width: 49%;
+    display: inline-block;
+    margin-bottom: 50px;
+}
+.site-footer .footer-widget{
+	width: 100%!important;
+    margin-top: 100px;
+    display: flex;
+    align-items: flex-start;
+}
+
+.site-footer .footer-widget .footer-widget-menu ul{
+	margin: 0px;
+	text-align: center;
+}
+
+.site-footer .footer-widget .footer-widget-menu ul li{
+	display: inline-block;
+    margin-right: 20px;
+    margin-bottom: 0;
+}
+

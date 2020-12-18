@@ -1,0 +1,221 @@
+article{
+	background-position: top center;
+	background-repeat: no-repeat;
+    background-image: url(https://live-marqeta-ms.pantheonsite.io/wp-content/uploads/2020/05/banner-bg-new.jpg)!important;
+}
+
+
+.intro-wrapper{
+	display:block;
+}
+.intro-wrapper h1{
+	font-size: 61px;
+    color: #302378;
+    letter-spacing: -0.76px;
+    line-height: 70.3px;
+    padding-bottom: 0;
+    max-width: 400px;
+}
+
+.intro-wrapper .subheading{
+	font-size: 16px;
+	font-weight: 500;
+	line-height: 27.2px;
+}
+
+.two-column.layout-reverse .content{
+	flex-direction: row-reverse;
+}
+
+.two-column .content{
+	display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.two-column .content .offers{
+	display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.two-column .content .offers .offer{
+	flex-basis: 50%;
+}
+
+.two-column .content .offers .offer h3{
+	font-size: 21px;
+    color: #5336b1!important;
+    letter-spacing: -0.37px;
+    line-height: 30px;
+    font-weight: 500;
+}
+
+.two-column .content .offers .offer p{
+	line-height: 26px;
+}
+
+.two-column .content .left-sec{
+	flex-basis: 58.8%;
+	margin-right: 3%;
+}
+
+.two-column .content .right-sec{
+	flex-basis: 38.2%;
+}
+
+.two-column .content .right-sec img{
+	max-width: 100%;
+	height:auto;
+	object-fit: contain;
+}
+
+.two-column .content .left-sec h2{
+	font-size: 40px;
+    color: #302378;
+    letter-spacing: 0.7px;
+    line-height: 54px;
+}
+
+.two-column .content .left-sec h2.subheading{
+	color: #0dbf7c;
+}
+
+.two-column .content .left-sec .left-sec-content{
+	display:block;
+}
+
+.two-column .content .left-sec .left-sec-content span{
+	color: #4d4476;
+	font-size: 18px;
+	font-weight: 500;
+	line-height: 30px;
+}
+
+.two-column .content .left-sec .left-sec-content ul{
+	margin-top: 40px;
+	margin-bottom: 30px;
+}
+
+.two-column .content .left-sec .left-sec-content ul li{
+	font-size: 21px;
+    letter-spacing: -0.26px;
+    line-height: 44px;
+}
+
+.logos-wrapper .logos{
+	display:flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+.logos-wrapper img{
+	max-width:100%;
+	height:auto;
+	object-fit: contain;
+	max-height: 40px;
+}
+
+.divider{
+	background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDBweCIgdmlld0JveD0iMCAwIDEyODAgMTQwIiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxnIGZpbGw9IiNmZmZmZmYiPjxwYXRoIGQ9Ik0xMjgwIDBsLTI2Mi4xIDExNi4yNmE3My4yOSA3My4yOSAwIDAgMS0zOS4wOSA2TDAgMHYxNDBoMTI4MHoiLz48L2c+PC9zdmc+);
+    background-size: 100% 100px;
+    bottom: 0;
+    height: 100px;
+    z-index: 1;
+    transform: rotateY(180deg);
+    background-repeat: no-repeat;
+}
+
+.cards{
+	padding-top: 54px;
+	padding-bottom: 120px;
+}
+
+.cards h2{
+	font-size: 40px;
+    color: #302378;
+    letter-spacing: -0.7px;
+    line-height: 54px;
+}
+
+.cards h2.subheading{
+	color: #0dbf7c;
+	margin-bottom: 40px;
+}
+
+.cards .cards-info .card{
+	color: #2a206a;
+    line-height: 22px;
+    background-color: #F5F5F7;
+    border-radius: 5px 5px 5px 5px;
+    overflow: hidden;
+    padding-top: 15px;
+    padding-right: 24px;
+    padding-bottom: 5px;
+    padding-left: 24px;
+    margin-bottom: 25px;
+    flex-basis: calc(100%/3 - 70px);
+}
+
+.cards .cards-info .card:nth-child(3n+2){
+	margin-left: 30px;
+    margin-right: 30px;
+}
+
+.cards .cards-info .card img.icon{
+	margin-bottom: 50px;
+    min-height: 24px;
+    line-height: 0;
+    max-width: 100%;
+    display:block;
+}
+
+.cards .cards-info .card a.heading, .cards .cards-info .card span.heading{
+	font-size: 20px;
+    color: #2a206a;
+    line-height: 30px;
+    text-decoration: unset;
+}
+
+.cards .cards-info .card .card-inner{
+	position: relative;
+}
+
+.cards .cards-info .card .card-inner .desc{
+	transform-style: preserve-3d;
+    top: 0;
+    opacity: 0;
+    transition: all 1s ease!important;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    display:block;
+}
+
+.cards .cards-info .card:hover .card-inner img.icon{
+	opacity: 0;
+}
+
+.cards .cards-info .card:hover .card-inner span.heading, .cards .cards-info .card:hover .card-inner a.heading{
+	opacity: 0;
+}
+
+.cards .cards-info .card:hover .card-inner .desc{
+	display: block;
+    opacity: 1;
+}
+.cards .cards-info .card:hover .card-inner .desc h4{
+	font-size: 20px;
+    color: #2a206a;
+    line-height: 30px;
+    margin-bottom: 0px;
+}
+
+.cards .cards-info .card .card-inner .desc a{
+	position: absolute;
+    right: 10px;
+    bottom: 5px;
+}
+.cards .cards-info .card:hover .card-inner .desc p{
+	padding-bottom: 16px;
+}

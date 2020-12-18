@@ -1,0 +1,10 @@
+@import 'common.css';
+@import 'footer.css';
+@import 'header.css';
+@import 'menu.css';
+@import 'page.css';
+
+body{
+    background-color: #f4f4f7 !important;
+}
+

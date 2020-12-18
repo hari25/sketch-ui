@@ -1,0 +1,27 @@
+.menu-primary-menu-container ul{
+	list-style: none;
+	display:flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.menu-primary-menu-container ul li{
+	padding:10px;
+
+}
+.menu-primary-menu-container ul li.current-menu-item{
+	text-decoration: underline;
+
+}
+.menu-primary-menu-container ul li:hover{
+	background-color: #fc3;
+    color: #000;
+
+}
+
+.menu-primary-menu-container ul li a{
+	color: #fff;
+    font-weight: 300;
+    font-size: 80%;
+    opacity: .7;
+}
