@@ -23,7 +23,7 @@
 					</div>
 					<div class="items">
 						<a href="http://app.marqeta.com">Sign in</a>
-						<a href="https://www.marqeta.com/contact-us" class="btn">Contact Us</a>
+						<a href="https://www.marqeta.com/contact-us" class="btn contact-us">Contact Us</a>
 					</div>
 				</div>
 			</div>

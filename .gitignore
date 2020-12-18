@@ -9,6 +9,8 @@ wp.sh
 sitemap.xml
 sitemap.xml.gz
 wp-config.php
+wp-content/mu-plugins
+wp-content/plugins
 wp-content/advanced-cache.php
 wp-content/backup-db/
 wp-content/backups/

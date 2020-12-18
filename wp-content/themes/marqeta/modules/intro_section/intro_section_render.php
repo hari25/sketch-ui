@@ -12,16 +12,16 @@ endif;
 ?>
 
 
-<section class="intro-wrapper">
-	<div class="constrained-width">
-		<div class="inner-content pb-row">
+<section class="intro-wrapper pb-row constrained-width">
+	
+		<div class="inner-content">
 			<?php if(!empty($subheading)): ?>
 				<span class="subheading green slide-right"><?php echo $subheading; ?></span>
 			<?php endif; ?>
 			<?php if(!empty($heading)): ?>
 				<h1 class="my-0 pb-10 animate-right"><?php echo $heading; ?></h1>
 			<?php endif; ?>
-			<h2 class="txt-rotate my-0 slide-right" data-period="2000" data-rotate='[ "faster supplier payments.", "point-of-sale lending", "travel and expense cards", "mobile wallet integration" ]'></h2>
+			<h2 class="txt-rotate mt-0 slide-right" data-period="2000" data-rotate='[ "faster supplier payments.", "point-of-sale lending", "travel and expense cards", "mobile wallet integration" ]'></h2>
 			<?php if(!empty($short_description)): ?>
 				<p class="text slide-right"><?php echo $short_description; ?></p>
 			<?php endif; ?>
@@ -31,5 +31,5 @@ endif;
 				</div>
 			<?php endif; ?>
 		</div>
-	</div>
+	
 </section>

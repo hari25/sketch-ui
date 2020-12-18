@@ -26,7 +26,7 @@ a{
     line-height: 1;
     text-decoration: unset;
     border-width: 0px;
-    border-radius: 18px;
+    border-radius: 12px;
     font-size: 18px;
     background-color: #1ad48e;
     padding-top: 10px;
@@ -34,6 +34,10 @@ a{
     padding-bottom: 10px;
     padding-left: 30px;
     font-weight: 500;
+}
+
+.btn.contact-us:hover{
+    background: #1FFBBB;
 }
 
 .flex-wrap{
@@ -80,6 +84,14 @@ h2{
     padding-left: 50px;
 }
 
+.pb_section{
+    padding-bottom:54px;
+}
+
+.pt_section{
+    padding-top: 54px;
+}
+
 .pb_row{
    padding-right: 50px;
    padding-bottom: 0px;
@@ -98,6 +110,14 @@ h2{
     padding-right: 50px;
     padding-bottom: 0px;
     padding-left: 50px;
+}
+
+.two-column.mod-padding .content.pt-row{
+    padding-top:200px;
+}
+
+.two-column.min-padding .content.pt-row{
+    padding-top:140px;
 }
 
 .pl-0{

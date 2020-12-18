@@ -4,7 +4,7 @@
 
 // Check rows exists.
 if( have_rows('logos') ): ?>
-    <section class="logos-wrapper">
+    <section class="logos-wrapper pb_row fade-in">
         <div class="constrained-width">
             <div class="pb_row logos">
                 <?php  // Loop through rows.

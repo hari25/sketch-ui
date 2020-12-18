@@ -1,12 +1,23 @@
-article{
-	background-position: top center;
-	background-repeat: no-repeat;
-    background-image: url(https://live-marqeta-ms.pantheonsite.io/wp-content/uploads/2020/05/banner-bg-new.jpg)!important;
-}
 
+.site-main{
+	margin-top: 50px;
+}
+.page-content{
+    padding-top: 141px;
+    display: block;
+    position: relative;
+    background-position: top center;
+	background-repeat: no-repeat;
+    background-image: url(../images/banner-bg-new.jpg)!important;
+}
 
 .intro-wrapper{
 	display:block;
+	padding-top:27px;
+}
+
+.intro-wrapper .intro-cta-wrapper .btn{
+	line-height:27.2px;
 }
 .intro-wrapper h1{
 	font-size: 61px;
@@ -15,6 +26,10 @@ article{
     line-height: 70.3px;
     padding-bottom: 0;
     max-width: 400px;
+}
+
+.intro-wrapper h2.txt-rotate{
+	margin-bottom: 17px;
 }
 
 .intro-wrapper .subheading{
@@ -101,6 +116,10 @@ article{
 	font-size: 21px;
     letter-spacing: -0.26px;
     line-height: 44px;
+}
+
+.logos-wrapper{
+	padding-top:27px;
 }
 
 .logos-wrapper .logos{
@@ -215,6 +234,8 @@ article{
 	position: absolute;
     right: 10px;
     bottom: 5px;
+    width: 100%;
+    text-align: right;
 }
 .cards .cards-info .card:hover .card-inner .desc p{
 	padding-bottom: 16px;
