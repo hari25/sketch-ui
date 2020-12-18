@@ -55,11 +55,14 @@ window.onload = function() {
   document.body.appendChild(css);
 };
 
-// =========================================
+
+
+  // =========================================
   //   SECTION ANIMATIONS
   // =========================================
 
   jQuery(document).ready(function($) {
+
     $(window).on('scroll load', function() {
 
       $('.fade-in').each(function(i) {
@@ -89,21 +92,21 @@ window.onload = function() {
           // console.log('slide-up objectSpeed=' + objectSpeed + ' and typeOf=' + jQuery.type( objectSpeed ) );
           if ( $(window).width() > 728 && windowBottom > objectBottom) {
 
-          $(this).animate({
-            'opacity': 1,
-            'top': 0,
-          }, objectSpeed, "linear");
+            $(this).animate({
+              'opacity': 1,
+              'top': 0,
+            }, objectSpeed, "linear");
 
           }
         });
 
-        $('.slide-right').each(function(i) {
+        $('.scroll-slide-right, .scroll-slide-left').each(function(i) {
           $(this).parent().css('overflow', 'hidden');
           var objectBottom = $(this).offset().top;
           var windowBottom = $(window).scrollTop() + $(window).height();
           // Retrieve the optional speed parameter so objects can slide in at different speeds
           var objectSpeed = $(this).data('speed');
-          if ( !objectSpeed ) { objectSpeed = 1500 }
+          if ( !objectSpeed ) { objectSpeed = 500 }
 
           if ($(window).width() > 728 && windowBottom > objectBottom) {
             // console.log('slide-right should be opening');

@@ -16,17 +16,17 @@ endif;
 	<div class="constrained-width">
 		<div class="inner-content pb-row">
 			<?php if(!empty($subheading)): ?>
-				<span class="subheading green"><?php echo $subheading; ?></span>
+				<span class="subheading green slide-right"><?php echo $subheading; ?></span>
 			<?php endif; ?>
 			<?php if(!empty($heading)): ?>
-				<h1 class="my-0 pb-10"><?php echo $heading; ?></h1>
+				<h1 class="my-0 pb-10 animate-right"><?php echo $heading; ?></h1>
 			<?php endif; ?>
-			<h2 class="txt-rotate my-0" data-period="2000" data-rotate='[ "faster supplier payments.", "point-of-sale lending", "travel and expense cards", "mobile wallet integration" ]'></h2>
+			<h2 class="txt-rotate my-0 slide-right" data-period="2000" data-rotate='[ "faster supplier payments.", "point-of-sale lending", "travel and expense cards", "mobile wallet integration" ]'></h2>
 			<?php if(!empty($short_description)): ?>
-				<p class="text"><?php echo $short_description; ?></p>
+				<p class="text slide-right"><?php echo $short_description; ?></p>
 			<?php endif; ?>
 			<?php if ( get_field('cta') ) : ?>
-				<div class="intro-cta-wrapper">
+				<div class="intro-cta-wrapper slide-right">
 					<a class="btn" href="<?php echo esc_url( $intro_cta_url ); ?>" target="<?php echo esc_attr( $intro_cta_target ); ?>"><?php echo esc_html( $intro_cta_title ); ?></a>
 				</div>
 			<?php endif; ?>

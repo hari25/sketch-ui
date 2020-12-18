@@ -139,31 +139,37 @@ h2{
     top:200px;
 }
 
-.slide-right {
+.scroll-slide-right {
     position: relative;
-    left: -50vw;
+    left: -10vw;
+}
+.scroll-slide-left {
+    position: relative;
+    left: 10vw;
 }
 
-/*animation element sliding left*/
-
-..slide-left {
-  opacity: 0;
-  -moz-transition: all 500ms linear;
-  -webkit-transition: all 500ms linear;
-  -o-transition: all 500ms linear;
-  transition: all 500ms linear;
-  -moz-transform: translate3d(-100px, 0px, 0px);
-  -webkit-transform: translate3d(-100px, 0px, 0px);
-  -o-transform: translate(-100px, 0px);
-  -ms-transform: translate(-100px, 0px);
-  transform: translate3d(-100px, 0px, 0px);
+/***** Slide Right *****/
+.slide-right {
+  animation: 1.5s slide-right;
+}
+@keyframes slide-right {
+  from {
+    margin-left: -15vw;
+  }
+  to {
+    margin-left: 0px;
+  }
 }
 
-.slide-left.in-view {
-  opacity: 1;
-  -moz-transform: translate3d(0px, 0px, 0px);
-  -webkit-transform: translate3d(0px, 0px, 0px);
-  -o-transform: translate(0px, 0px);
-  -ms-transform: translate(0px, 0px);
-  transform: translate3d(0px, 0px, 0px);
+/***** animate Right *****/
+.animate-right {
+  animation: 1s animate-right;
+}
+@keyframes animate-right {
+  from {
+    margin-left: -10vw;
+  }
+  to {
+    margin-left: 0px;
+  }
 }
