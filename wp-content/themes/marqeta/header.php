@@ -24,6 +24,13 @@
 					<div class="items">
 						<a href="http://app.marqeta.com">Sign in</a>
 						<a href="https://www.marqeta.com/contact-us" class="btn contact-us">Contact Us</a>
+						<div class="mobile-menu">
+							<button type="button" class="js-menu-trigger sliding-menu-button" role="button" aria-label="Open Menu">
+								<span></span>
+								<span></span>
+								<span></span>
+							</button>
+						</div>
 					</div>
 				</div>
 			</div>

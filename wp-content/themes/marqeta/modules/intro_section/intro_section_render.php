@@ -12,9 +12,9 @@ endif;
 ?>
 
 
-<section class="intro-wrapper pb-row constrained-width">
+<section class="intro-wrapper constrained-width">
 	
-		<div class="inner-content">
+		<div class="inner-content pb-row">
 			<?php if(!empty($subheading)): ?>
 				<span class="subheading green slide-right"><?php echo $subheading; ?></span>
 			<?php endif; ?>
