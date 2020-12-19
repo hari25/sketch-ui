@@ -27,8 +27,8 @@
                             $info = $offer['info']; 
                         endif; ?>
                         <div class="offer">
-                            <h3 class="my-0"><?php echo $heading; ?></h3>
-                            <p><?php echo $info; ?></p>
+                            <h3 class="my-0 pb-10"><?php echo $heading; ?></h3>
+                            <p class="my-0"><?php echo $info; ?></p>
                         </div>
 
                     <?php endforeach; endif; ?>

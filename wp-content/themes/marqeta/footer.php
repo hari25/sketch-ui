@@ -36,11 +36,17 @@
 				    'menu_class' => 'menu',
 				    'items_wrap'     => '<div><h4 class="my-0">Developer</h4><ul class="pl-0">%3$s</ul></div>'
 				) ); ?>
-				<?php wp_nav_menu( array(
-				    'theme_location' => 'footer-menu-five',
-				    'menu_class' => 'menu',
-				    'items_wrap'     => '<div><h4 class="my-0">Company</h4><ul class="pl-0">%3$s</ul></div>'
-				) ); ?>
+				<div>
+					<?php wp_nav_menu( array(
+					    'theme_location' => 'footer-menu-five',
+					    'menu_class' => 'menu',
+					    'items_wrap'     => '<div><h4 class="my-0">Company</h4><ul class="pl-0">%3$s</ul></div>'
+					) ); ?>
+					<div class="weather">
+						<h3 class="mb-0"><?php echo show_temp(); ?></h3>
+					</div>
+				</div>
+				<!-- "' . show_temp() . '" -->
 			</div>
 			<div class="footer-widget">		
 					<div class="copyright fwidget">

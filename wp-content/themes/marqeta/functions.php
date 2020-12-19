@@ -69,20 +69,36 @@ add_action( 'init', 'marqeta_register_menus' );
 
 
 
-//make api request
-function make_api_request( $tag, $param ) {
-	$name = strtoupper($tag);
- 	$response = wp_remote_get ( $this->apiUrl .$param . $name .'?apikey='. API_KEY, array ( 'sslverify' => false ) );
-    if (!is_wp_error ($response) ) {
-        $body =  wp_remote_retrieve_body($response);
-        $data = json_decode( $body );
-        return $data;
-        
+/**
+ * Get the current temperature for Zip Code 94612 using the Open Weather Map API.
+ */
+function show_temp() {
+    // Do we have this information in our transients already?
+    $transient = get_transient( 'show_temp');
+    
+    // Yep!  Just return it and we're done.
+    if( ! empty( $transient )){
+        echo $transient;
     }
-    else{
-    	return null;
+    // Nope!  We gotta make a call to the API.
+    else {
+        $url = 'http://api.openweathermap.org/data/2.5/weather?zip=94612,us&units=imperial&APPID=';
+
+        $response = wp_remote_get( $url . API_KEY  );
+        // Take the JSON and select the temperature info. Round the temperature up or down.
+        if( is_array($response) ) {
+            $body = $response['body']; // use the content
+            $resp = json_decode($body);
+            $basetemp = $resp->main->temp;
+            $temp = round($basetemp);
+        }
+        // Save the API response so we don't have to call again for 60 seconds. API limits to 60 calls per minute.
+        set_transient( 'show_temp', $temp, MINUTE_IN_SECONDS );
     }
-} 
+    // Return the temperature.  The function will return here the first time it is run, and then once again, each time the transient expires.
+    echo $temp;
+     
+}
 
 
 ?>

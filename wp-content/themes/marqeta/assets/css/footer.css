@@ -5,6 +5,15 @@
     position: relative;
 }
 
+.site-footer .weather h3{
+	color: rgba(255,255,255,0.71);
+	font-size: 40px;
+}
+
+.site-footer .weather h3:after{
+	content: "°";
+}
+
 .site-footer .divider{
 	background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDBweCIgdmlld0JveD0iMCAwIDEyODAgMTQwIiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxnIGZpbGw9IiNmZmZmZmYiPjxwYXRoIGQ9Ik0xMjgwIDBsLTI2Mi4xIDExNi4yNmE3My4yOSA3My4yOSAwIDAgMS0zOS4wOSA2TDAgMHYxNDBoMTI4MHoiLz48L2c+PC9zdmc+);
     background-size: 100% 100px;
