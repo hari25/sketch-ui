@@ -82,9 +82,10 @@ function show_temp() {
     }
     // Nope!  We gotta make a call to the API.
     else {
-        $url = 'http://api.openweathermap.org/data/2.5/weather?zip=94612,us&units=imperial&APPID=';
+        $key = API_KEY;
+        $url = 'http://api.openweathermap.org/data/2.5/weather?zip=94612,us&units=imperial&APPID=442264878912f4699d9935b5156037a7';
 
-        $response = wp_remote_get( $url . API_KEY  );
+        $response = wp_remote_get( $url);
         // Take the JSON and select the temperature info. Round the temperature up or down.
         if( is_array($response) ) {
             $body = $response['body']; // use the content

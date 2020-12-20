@@ -73,11 +73,11 @@ window.onload = function() {
         var objectSpeed = $(this).data('speed');
         if ( !objectSpeed ) { objectSpeed = 900 }
         // console.log('slide-up objectSpeed=' + objectSpeed + ' and typeOf=' + jQuery.type( objectSpeed ) );
-        if ( $(window).width() > 728  && windowBottom > objectBottom ) {
+        if (windowBottom > objectBottom ) {
 
-        $(this).animate({
-          'opacity': 1
-        }, objectSpeed, "linear");
+          $(this).animate({
+            'opacity': 1
+          }, objectSpeed, "linear");
 
         }
       });
@@ -108,7 +108,7 @@ window.onload = function() {
           var objectSpeed = $(this).data('speed');
           if ( !objectSpeed ) { objectSpeed = 500 }
 
-          if ($(window).width() > 728 && windowBottom > objectBottom) {
+          if (windowBottom > objectBottom) {
             // console.log('slide-right should be opening');
             $(this).animate({
               'left': 0,

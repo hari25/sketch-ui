@@ -257,6 +257,9 @@
 }
 
 @media screen and (max-width: 480px) {
+	.page-content{
+	    background-image: url(../images/mobile-bg.png)!important;
+	}
  	.two-column .content{
 		flex-direction: column;
 		padding: 10px;
@@ -267,8 +270,14 @@
 	.two-column .content .offers .offer{
 		flex-basis: 100%;
 	}
-	.scroll-slide-left{
-		left: 0px;
+	.two-column .content .right-sec img{
+		width:200px;
+	}
+	.two-column.mod-padding .content.pt-row{
+		padding-top: 50px;
+	}
+	.cards{
+		padding-top: 0px;
 	}
 	.cards .cards-info .card{
 		flex-basis: 100%;
@@ -291,5 +300,16 @@
 		padding-left: 30px;
 		padding-bottom: 100px;
 		text-align: center;
+	}
+	.logos-wrapper{
+		padding: 0px;
+	}
+	.logos-wrapper .logos{
+		flex-wrap: wrap;
+		padding: 0px;
+	}
+	.logos-wrapper img{
+		width: 43%;
+		padding: 10px;
 	}
 }
