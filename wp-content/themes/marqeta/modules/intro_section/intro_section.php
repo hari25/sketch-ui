@@ -18,7 +18,7 @@ function register_acf_block_intro_section()
 	        'keywords'			=> array('intro'),
 	        'icon' 				=> 'megaphone',
 	        'enqueue_assets'	=> function(){
-				wp_register_style( 'intro-section-module-styles', get_template_directory_uri() . '/modules/intro_section/intro_section.css');
+				wp_register_style( 'intro-section-module-styles', get_template_directory_uri() . '/modules/intro_section/intro_section.css',array(), '', 'all' );
 				wp_enqueue_style('intro-section-module-styles');
 			},
 

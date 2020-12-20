@@ -1,37 +1,4 @@
 <?php 
-/**
- * Registers a stylesheet.
- */
-add_action('init', 'my_register_styles');
-
-function my_register_styles() {
-    wp_register_style( 'marqeta', get_template_directory_uri() . '/assets/css/marqeta.css' );
-    
-}
-
-//enqueue style sheet
-add_action( 'wp_enqueue_scripts', 'my_enqueue_styles' );
-
-function my_enqueue_styles() {
-    
-        wp_enqueue_style( 'marqeta' );
-}
-
-
-function my_load_scripts($hook) {
- 
-    // 
-    wp_enqueue_script( 'custom_js', get_template_directory_uri() . '/assets/js/main.js', array('jquery'), true);
- 
-}
-add_action('wp_enqueue_scripts', 'my_load_scripts');
-
-
-// =========================================
-// ACF FIELDS SETUP
-// =========================================
-include_once( 'settings/acf-fields.php' );
-
 // =========================================
 //  INGEST MODULES
 // =========================================
@@ -46,6 +13,43 @@ foreach ( $dirs as $dir ) :
     $moduleInitFile = 'modules/' . $moduleName . '/' . $moduleName . '.php';
     include_once($moduleInitFile);
 endforeach;
+
+
+/**
+ * Registers a stylesheet.
+ */
+//add_action('init', 'my_register_styles');
+
+function my_register_styles() {
+    wp_register_style( 'marqeta', get_template_directory_uri() . '/assets/css/marqeta.css' );
+    wp_enqueue_style( 'marqeta' );
+    wp_enqueue_script( 'custom_js', get_template_directory_uri() . '/assets/js/main.js', array('jquery'), true);
+    
+}
+
+//enqueue style sheet
+// add_action( 'wp_enqueue_scripts', 'my_enqueue_styles' );
+
+// function my_enqueue_styles() {
+    
+//         wp_enqueue_style( 'marqeta' );
+// }
+
+
+// function my_load_scripts($hook) {
+ 
+//     // 
+//     wp_enqueue_script( 'custom_js', get_template_directory_uri() . '/assets/js/main.js', array('jquery'), true);
+ 
+// }
+add_action('wp_enqueue_scripts', 'my_register_styles');
+
+
+// =========================================
+// ACF FIELDS SETUP
+// =========================================
+//include_once( 'settings/acf-fields.php' );
+
 
 
 //Registering Menus
