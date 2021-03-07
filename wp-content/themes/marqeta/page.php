@@ -24,6 +24,7 @@ get_header();
 				if ( !empty($the_content) ) : ?>
 				<article id="post-<?php the_ID(); ?>">
 					<div class="page-content">
+						<h2>Hello</h2>
 						<?php echo $the_content; ?>
 					</div>
 				</article>
