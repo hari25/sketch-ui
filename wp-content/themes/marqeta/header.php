@@ -16,7 +16,7 @@
 			<div class="container">
 				<div class="header-items">
 					<div class="logo_container">
-						<div class="header-logo-wrapper">
+						<div class="header-logo-wrapper test">
 							<a href="<?php echo get_home_url(); ?>"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/header-logo.svg" alt="header image"></a>
 						</div>
 						<?php wp_nav_menu( array( 'theme_location' => 'header-menu' ) ); ?>
